@@ -1,0 +1,25 @@
+<html>
+<body>
+<script type="text/javascript">
+    var image=null;
+        function init(){
+            image=document.getElementById("myImage");
+            image.style.position="relative";
+            image.style.left="0px";
+        }
+                function moveImage(){
+                    image.style.left=parseInt(image.style.left)+30+"px";
+                }
+                window.onload=init;
+</script>
+</body>
+
+<body>
+<form>
+<img id="myImage" src="https://pannipa.keybase.pub/resource/matchagreentea.jpg">
+<p>Click the button to move the image</p>
+<input type="button" value="Move Image" onclick="moveImage();">
+</form>
+</body>
+
+</html>
